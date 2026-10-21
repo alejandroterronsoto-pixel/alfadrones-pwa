@@ -1,0 +1,9 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs temporales
+*.log
+
+# Archivos de configuración locales (si los hubiera)
+config.local.js
