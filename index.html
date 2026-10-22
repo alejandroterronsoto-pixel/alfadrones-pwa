@@ -84,11 +84,32 @@
     />
     <meta name="apple-mobile-web-app-title" content="Alfadrones" />
     <!-- Reemplaza la línea anterior por esto -->
+    <!-- En el <head> de index.html -->
+
+    <!-- Icono principal para iOS (Pantalla de Inicio) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Variantes opcionales pero recomendadas -->
     <link
       rel="apple-touch-icon"
-      sizes="180x180"
-      href="/img/icons/apple-touch-icon.png"
+      sizes="152x152"
+      href="/img/icons/icon-152.png"
     />
+    <!-- Si tienes este tamaño -->
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="/img/icons/icon-167.png"
+    />
+    <!-- iPad Pro -->
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/img/icons/icon-120.png"
+    />
+    <!-- iPhone Retina -->
+
+    <!-- Favicon estándar (pestaña navegador) -->
     <link
       rel="icon"
       type="image/png"
@@ -101,9 +122,11 @@
       sizes="16x16"
       href="/img/icons/favicon-16x16.png"
     />
+
+    <!-- Manifest PWA -->
     <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#52497f" />
-    <!-- 3. Android Theme Color -->
+
+    <!-- Tema color (esto explica el fondo morado que ves) -->
     <meta name="theme-color" content="#52497f" />
 
     <!-- Fin Etiquetas PWA -->
