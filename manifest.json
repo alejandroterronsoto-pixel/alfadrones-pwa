@@ -1,54 +1,27 @@
 {
-    "name": "Alfadrones - Servicios Aéreos e IA",
-    "short_name": "Alfadrones",
-    "description": "Cotización inteligente, portafolio y servicios con drone.",
-    "start_url": "/index.html",
-    "scope": "/",
-    "display": "standalone",
-    "background_color": "#1a1a1a",
-    "theme_color": "#52497f",
-    "orientation": "portrait-primary",
-    
-    <!--CAMPO ID RECOMENDADO PARA EVITAR AMBIGÜEDAD -->
-    "id": "/index.html", 
-  
-    "icons": [
-      {
-        "src": "/img/icons/icon-192.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose": "any maskable" 
-      },
-      {
-        "src": "/img/icons/icon-512.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/img/icons/maskable-icon-512.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "maskable"
-      }
-    ],
-  
-    <!--  CAPTURAS DE PANTALLA (SCREENSHOTS) OPCIONALES PERO RECOMENDADAS -->
-    <!-- Si no tienes estas imágenes aún, puedes comentarlas o borrar esta sección temporalmente -->
-    "screenshots": [
-      {
-        "src": "/img/screenshots/desktop-view.png",
-        "sizes": "1280x800",
-        "type": "image/png",
-        "form_factor": "wide",
-        "label": "Vista de escritorio de Alfadrones"
-      },
-      {
-        "src": "/img/screenshots/mobile-view.png",
-        "sizes": "750x1334",
-        "type": "image/png",
-        "form_factor": "narrow",
-        "label": "Vista móvil de Alfadrones"
-      }
-    ]
-  }
+  "name": "Alfadrones - Servicios Aéreos e IA",
+  "short_name": "Alfadrones",
+  "description": "Cotización inteligente, portafolio y servicios con drone.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#52497f",
+  "orientation": "portrait-primary",
+  "id": "/",
+  "icons": [
+    {
+      "src": "/img/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": []
+}
