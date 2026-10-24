@@ -1016,6 +1016,169 @@
       </div>
     </section>
 
+    <!-- ========================================== -->
+    <!-- SECCIÓN: COTIZADOR INTELIGENTE (ALFA BOT)  -->
+    <!-- ========================================== -->
+    <section
+      id="cotizador-section"
+      class="page bg-style1"
+      style="background: #f0f8ff; padding: 60px 0"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <div
+              class="panel panel-default shadow-lg"
+              style="border-radius: 15px; border: none"
+            >
+              <div
+                class="panel-heading text-center"
+                style="
+                  background: #52497f;
+                  color: white;
+                  border-top-left-radius: 15px;
+                  border-top-right-radius: 15px;
+                  padding: 20px;
+                "
+              >
+                <h2><i class="fa fa-robot"></i> Cotiza en 30 Segundos</h2>
+                <p style="margin: 0; opacity: 0.9">
+                  Responde las preguntas y recibe tu presupuesto estimado al
+                  instante.
+                </p>
+              </div>
+
+              <div class="panel-body" style="padding: 30px">
+                <!-- Paso 1: Tipo de Servicio -->
+                <div class="form-group mb-4">
+                  <label
+                    for="tipo-servicio"
+                    style="font-weight: bold; color: #333"
+                    ><i class="fa fa-map-marker"></i> ¿Qué necesitas
+                    grabar?</label
+                  >
+                  <select
+                    id="tipo-servicio"
+                    class="form-control input-lg"
+                    style="height: 50px; border-radius: 8px"
+                  >
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="eventos">
+                      🎉 Eventos Sociales (Bodas, XV Años)
+                    </option>
+                    <option value="bienes">
+                      🏠 Bienes Raíces / Arquitectura
+                    </option>
+                    <option value="obra">
+                      🏗️ Seguimiento de Obra / Topografía
+                    </option>
+                    <option value="general">
+                      📹 Video Corporativo / Redes Sociales
+                    </option>
+                  </select>
+                </div>
+
+                <!-- Paso 2: Duración Estimada -->
+                <div class="form-group mb-4">
+                  <label for="duracion" style="font-weight: bold; color: #333"
+                    ><i class="fa fa-clock-o"></i> Duración estimada de la
+                    sesión</label
+                  >
+                  <select
+                    id="duracion"
+                    class="form-control input-lg"
+                    style="height: 50px; border-radius: 8px"
+                  >
+                    <option value="">-- Selecciona duración --</option>
+                    <option value="corta">Hasta 2 horas (Express)</option>
+                    <option value="media">Entre 2 y 4 horas (Estándar)</option>
+                    <option value="larga">Más de 4 horas o varios días</option>
+                  </select>
+                </div>
+
+                <!-- Paso 3: Extras (Checkboxes) -->
+                <div class="form-group mb-4">
+                  <label style="font-weight: bold; color: #333"
+                    ><i class="fa fa-plus-circle"></i> Servicios
+                    Adicionales</label
+                  >
+                  <div class="checkbox custom-checkbox">
+                    <label
+                      ><input type="checkbox" id="extra-edicion" checked />
+                      <span>Edición Profesional de Video (+$1,500)</span></label
+                    >
+                  </div>
+                  <div class="checkbox custom-checkbox">
+                    <label
+                      ><input type="checkbox" id="extra-fotos" />
+                      <span>Galería de Fotos Aéreas (+$800)</span></label
+                    >
+                  </div>
+                  <div class="checkbox custom-checkbox">
+                    <label
+                      ><input type="checkbox" id="extra-desplazamiento" />
+                      <span>Desplazamiento fuera de CDMX (+$1,200)</span></label
+                    >
+                  </div>
+                </div>
+
+                <!-- Resultado Dinámico -->
+                <div
+                  id="resultado-cotizacion"
+                  class="alert alert-info text-center"
+                  style="
+                    display: none;
+                    background: #e8f4fc;
+                    border: 2px solid #52497f;
+                    border-radius: 10px;
+                    margin-bottom: 20px;
+                  "
+                >
+                  <h3 style="color: #52497f; margin: 0">Precio Estimado:</h3>
+                  <h1
+                    id="precio-final"
+                    style="color: #25d366; font-weight: 800; margin: 10px 0"
+                  >
+                    $0 MXN
+                  </h1>
+                  <small
+                    >*Valor aproximado sujeto a disponibilidad y detalles
+                    finales.</small
+                  >
+                </div>
+
+                <!-- Botón de Acción -->
+                <button
+                  id="btn-generar-whatsapp"
+                  class="btn btn-success btn-block btn-lg"
+                  disabled
+                  style="
+                    background: #25d366;
+                    border: none;
+                    height: 55px;
+                    border-radius: 8px;
+                    font-weight: bold;
+                    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+                  "
+                >
+                  <i class="fab fa-whatsapp"></i> Enviar Presupuesto por
+                  WhatsApp
+                </button>
+
+                <p
+                  id="mensaje-error"
+                  class="text-danger text-center mt-2"
+                  style="display: none"
+                >
+                  Por favor completa los campos obligatorios.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Redes Sociales -->
     <section id="social-section">
       <div
@@ -1182,5 +1345,18 @@
 
     <!-- 🔥 SCRIPT DEL SERVICE WORKER (CORRECTAMENTE UBICADO) 🔥 -->
     <script src="js/app.js"></script>
+
+        <!-- Scripts Existentes -->
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        
+        <!-- 🔥 NUEVO SCRIPT DEL COTIZADOR 🔥 -->
+        <script src="js/cotizador.js"></script>
+        
+        <!-- Registro Service Worker -->
+        <script src="js/app.js"></script>
+    </body>
   </body>
 </html>
